@@ -69,8 +69,8 @@ resource "terraform_data" "file_transfer" {
     ]
   }
   connection {
-    type        = "ssh"
-    user        = "testadmin"
+    type     = "ssh"
+    user     = "testadmin"
     password = "Password1234!"
     host     = azurerm_public_ip.example.ip_address
   }
